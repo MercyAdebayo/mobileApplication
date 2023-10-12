@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".ComputersActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="COMPUTERS"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageComp1"
+        android:layout_width="103dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/dell_computer_image"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxComp1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/checkBoxComp1"
+        android:layout_width="270dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="40dp"
+        android:text="Dell Inspiron 27 All-in-One\n        $1,499.99"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <ImageView
+        android:id="@+id/imageViewComp2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/samsung_computer_image"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxComp2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageComp1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxComp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
+        android:text="500GB Samsung Desktop\n        $490.19"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxComp1" />
+
+    <ImageView
+        android:id="@+id/imageViewComp3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/imac_computer_image"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxComp3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewComp2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxComp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="92dp"
+        android:text="24” iMac All-in-One\n        $1,699.00"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxComp2" />
+
+    <ImageView
+        android:id="@+id/imageViewComp4"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/lenovo_computer_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxComp4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewComp3"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <CheckBox
+        android:id="@+id/checkBoxComp4"
+        android:layout_width="216dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="92dp"
+        android:text="Lenovo Desktop Computer ThinkCentre \n        $1,358.99"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxComp3"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/checkOut_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxComp4"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

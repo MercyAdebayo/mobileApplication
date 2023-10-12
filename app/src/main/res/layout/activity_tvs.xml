@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".TVsActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="TVs"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageTv1"
+        android:layout_width="95dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/samsung_tv_image"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxTv1"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxTv1"
+        android:layout_width="213dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="100dp"
+        android:text="55”Samsung LED \n        $699.99"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageViewTv2"
+        android:layout_width="115dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/lg_tv_image"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxTv2"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTv1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:text="32” LG Smart LED\n        $247.99"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTv1" />
+
+    <ImageView
+        android:id="@+id/imageViewTv3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/hisense_smart_tv_image"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxTv3"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTv2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="32” Hisense Smart full Array\n        $167.99"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTv2" />
+
+    <ImageView
+        android:id="@+id/imageViewTv4"
+        android:layout_width="126dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/hisense_4k_tv_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxTv4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTv3"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTv4"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="55” Hisense 4K ULED\n        $847.99"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTv3"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <Button
+        android:id="@+id/checkOut_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTv4"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
